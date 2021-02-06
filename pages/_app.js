@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import Head from 'next/head';
 import { useState } from 'react';
+import { Grommet } from 'grommet';
 
 function MyApp({ Component, pageProps }) {
 	const [darkMode, setDarkMode] = useState(true);
