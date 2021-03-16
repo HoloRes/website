@@ -36,6 +36,61 @@ export default function JoinUs() {
                 </Heading>
                 <br/>
 
+                <p>
+                    Translations Intro - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+                <br/>
+
+                <h4>
+                    Minecraft - Hololive Construction
+                </h4>
+
+                <img alt="Hololive Construction Logo" />
+
+                <p>
+                    Minecraft Description - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+                <br/>
+
+                <h4>
+                    Multiplayer
+                </h4>
+
+                <img alt="FPS Image"/> 
+                <img alt="MOBA Image"/>
+                <img alt="Raiding Image"/>
+                <img alt="Tetris Image"/>
+                <img alt="Mobile Gaming Image"/>
+                <img alt="Other Image"/>
+                <br/>
+                <br/>
+
+                <p>FPS</p>
+                <p>MOBA</p>
+                <p>Raiding</p>
+                <p>Tetris</p>
+                <p>Mobile Gaming</p>
+                <p>Other</p>
+                <br/>
+                <br/>
+
+                <p>
+                    Various Game Types Description - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+                <br/>
+
                 <main>
                     {' '}
                     <Link href="/">

@@ -30,20 +30,33 @@ export default function JoinUs() {
                 HOLOLIVE RESORT
                 </h1>
             </Header>
+            
             <div style={backgroundColour}>
                 <Heading>
                     Join Us!
                 </Heading>
                 <br/>
 
+                <h1>
+                    THE RESORT IS OPEN FOR BUSINESS!
+                </h1>
+                <br/>
+
+                <Button label="Discord Link Button" color="blue"></Button>
+                <br/>
+                <br/>
+
+
+
                 <main>
                     {' '}
                     <Link href="/">
                         <a>Home</a>
                     </Link>
-
                 </main>
+
             </div>
+
             <Footer background={{color: 'black' }} direction="row" pad="small" justify="center">
                 <h2>This is a footer</h2>
             </Footer>  

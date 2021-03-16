@@ -32,23 +32,21 @@ const myTheme = {
 export default function Home() {
 	return (
 		<Grommet theme={myTheme} >
+
 			<Header background={{color: 'red' }} direction="row" pad="small" justify="center">
 				<h1 style={headerFont}>
 				HOLOLIVE RESORT
 				</h1>
 			</Header>
+
 			<div style={backgroundColour}>
+				
 				<Heading>
                     Home Page
                 </Heading>
 				<br/>
 			
 				<main>
-					{' '}
-					<Link href="/join_us">
-						<a>Join Us!</a>
-					</Link>
-					<br/>
 					{' '}
                     <Link href="/creatives">
                         <a>Art and Creatives</a>
@@ -73,6 +71,16 @@ export default function Home() {
                     <Link href="/language-exchange">
                         <a>Language Exchange</a>
                     </Link>
+
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+
+					{' '}
+					<Link href="/join_us">
+						<a>Join Us!</a>
+					</Link>
 					<br/>
 				</main>
 
