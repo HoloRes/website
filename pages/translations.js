@@ -52,8 +52,12 @@ export default function JoinUs() {
                 <br/>
 
                 <Button label="Youtube Channel Link Button" color="red"></Button>
+                <br/>
+                <br/>
 
                 <Button label="TL Team Applications Link" color="green"></Button>
+                <br/>
+                <br/>
 
 
                 <main>

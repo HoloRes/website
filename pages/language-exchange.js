@@ -13,7 +13,7 @@ const myTheme = {
   const backgroundColour = {
 	backgroundColor: '#30D5C8',
 	padding: 100,
-	height: 900
+	height: 2000
   }
   
   const headerFont = {
