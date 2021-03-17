@@ -1,4 +1,5 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
 import Head from 'next/head'
 import { Grommet, Header, Box, Button, Footer, Heading} from 'grommet';
 
@@ -13,7 +14,7 @@ const myTheme = {
   const backgroundColour = {
 	backgroundColor: '#30D5C8',
 	padding: 100,
-	height: 2000
+	height: "100%"
   }
   
   const headerFont = {
@@ -45,6 +46,8 @@ export default function JoinUs() {
                 </p>
                 <br/>
                 <br/>
+
+                
 
                 <img alt="Listening Image"/> 
                 <img alt="Speaking Image"/>

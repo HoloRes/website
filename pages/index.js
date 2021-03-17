@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Grommet, Header, Box, Button, Footer, Heading } from 'grommet';
 
 const myTheme = {
@@ -14,7 +15,7 @@ const myTheme = {
   const backgroundColour = {
 	backgroundColor: '#30D5C8',
 	padding: 100,
-	height: 900
+	height: "100%"
   }
   
   const headerFont = {
@@ -40,7 +41,7 @@ export default function Home() {
 			</Header>
 
 			<div style={backgroundColour}>
-				
+
 				<Heading>
                     Home Page
                 </Heading>

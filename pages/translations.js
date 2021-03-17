@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import Head from 'next/head'
+import Link from 'next/link';
+import Head from 'next/head';
 import { Grommet, Header, Box, Button, Footer, Heading} from 'grommet';
 
 const myTheme = {
@@ -13,7 +13,7 @@ const myTheme = {
   const backgroundColour = {
 	backgroundColor: '#30D5C8',
 	padding: 100,
-	height: 900
+	height: "100%"
   }
   
   const headerFont = {

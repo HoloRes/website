@@ -1,7 +1,9 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
 import Head from 'next/head'
-import { Grommet, Header, Box, Button, Footer, Heading, Image} from 'grommet';
+import { Grommet, Header, Box, Button, Footer, Heading, Text} from 'grommet';
+import { Medium } from 'grommet-icons';
 //import logo from './images/HLLResistance_Logo.png';
 
 const myTheme = {
@@ -15,7 +17,7 @@ const myTheme = {
   const backgroundColour = {
 	backgroundColor: '#30D5C8',
 	padding: 100,
-	height: 3000
+	height: "100%"
   }
   
   const headerFont = {
@@ -24,13 +26,19 @@ const myTheme = {
 	color: 'yellow'
   };
 
+  /*
+  var creativeIntro = {
+      display: 'inline-block',
+  };
+  */
+
 export default function JoinUs() {
     return (
         <Grommet theme={myTheme} >
             <Header background={{color: 'red' }} direction="row" pad="small" justify="center">
-                <h1 style={headerFont}>
+                <Heading level="1" style={headerFont}>
                 HOLOLIVE RESORT
-                </h1>
+                </Heading>
             </Header>
             <div style={backgroundColour}>
                 <Heading>
@@ -38,70 +46,148 @@ export default function JoinUs() {
                 </Heading>
                 <br/>
 
-                <img src="./images/HLLResistance_Logo.png" alt="Image logo(Broken)" style={{ display:'inline-block' }} />
+                <Box direction="row">
+                    <Box style={{display: 'inline-block', margin: 20}}>
+                        <Image
+                            src="/HLLResistance_Logo.png"
+                            alt="Hololive Logo"
+                            width={300}
+                            height={400}
+                        />
+                    </Box>
+                    <Box style={{display: 'inline-block'}}>
+                        <Text>
+                        Creatives Intro - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </Text> 
+                    </Box>  
+                </Box>             
                 <br/>
-                <br/>
-
-                <p>
-                    Creatives Intro - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
                 <br/>
 
                 <h4>
                     Art Description
                 </h4>
-                <p>
+                <Text>
                     Art Description - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
+                </Text>
                 <br/>
 
-                <img alt="Art Sample 1"/> 
-                <img alt="Art Sample 2"/>
-                <img alt="Art Sample 3"/>
+                <Box direction="row" justify="center">
+                    <div style={{display: 'inline-block', margin: 10}}>
+                        <Image
+                            src="/house-art.jpg"
+                            alt="Art Sample 1"
+                            width={150}
+                            height={200}
+                        />
+                    </div>
+                    <div style={{display: 'inline-block', margin: 10}}>
+                        <Image
+                            src="/butterfly.jpg"
+                            alt="Art Sample 2"
+                            width={150}
+                            height={200}
+                        />
+                    </div>
+                    <div style={{display: 'inline-block', margin: 10}}>
+                        <Image
+                            src="/abstract.jpg"
+                            alt="Art Sample 3"
+                            width={150}
+                            height={200}
+                        />
+                    </div>
+                </Box>
+
+                <Box direction="row" justify="center">
+                    <Text style={{display: 'inline-block', margin: 40}}>House Art</Text>
+                    <Text style={{display: 'inline-block', margin: 40}}>Butterfly Art</Text>
+                    <Text style={{display: 'inline-block', margin: 40}}>Abstract Art</Text>
+                </Box>                
                 <br/>
                 <br/>
 
-                <p>Art Sample Name</p>
-                <p>Art Sample Name</p>
-                <p>Art Sample Name</p>
-                <br/>
-                <br/>
-
-                <h2>
+                <Heading level="2">
                     Popular Artists
-                </h2>
+                </Heading>
                 <br/>
 
-                <img alt="Artist Pfp 1"/> 
-                <img alt="Artist Pfp 2"/>
-                <img alt="Artist Pfp 3"/>
-                <br/>
-                <br/>
+                <Box direction="row" justify="center">
+                    <Box width="large" pad="medium">
+                        <Image
+                            src="/house-art.jpg"
+                            alt="Art Sample 1"
+                            width={300}
+                            height={400}
+                        />
+                    </Box>
+                    <Box pad="medium">
+                        <Text>Artist 1 - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</Text>
+                    </Box>
+                </Box>
 
-                <p>Art Sample Name</p>
-                <p>Art Sample Name</p>
-                <p>Art Sample Name</p>
-                <br/>
-                <br/>
+                <Box direction="row" justify="center">
+                    <Box width="large" pad="medium">
+                        <Image
+                            src="/house-art.jpg"
+                            alt="Art Sample 1"
+                            width={300}
+                            height={400}
+                        />
+                    </Box>
+                    <Box pad="medium">
+                        <Text>Artist 2 - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</Text>
+                    </Box>
+                </Box>
 
-                <h4>
+                <Box direction="row" justify="center">
+                    <Box width="large" pad="medium">
+                        <Image
+                            src="/house-art.jpg"
+                            alt="Art Sample 1"
+                            width={300}
+                            height={400}
+                        />
+                    </Box>
+                    <Box pad="medium">
+                        <Text>Artist 3 - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</Text>
+                    </Box>
+                </Box>
+                    
+                
+                <Heading level="3">
                     Music and Writing
-                </h4>
-                <p>
+                </Heading>
+                <Text>
                     Music and Writing Description - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
+                </Text>
+                <br/>
+                <br/>
+                <br/>
                 <br/>
 
                 <main>
