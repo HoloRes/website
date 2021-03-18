@@ -1,91 +1,104 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
-import { Grommet, Header, Box, Button, Footer, Heading} from 'grommet';
+import { Grommet, Header, Box, Button, Footer, Heading, Text} from 'grommet';
 
-const myTheme = {
-	global: {
-		colors: {
-			turquoise: '#30D5C8'
-		},
-	},
-  }
-  
-  const backgroundColour = {
-	backgroundColor: '#30D5C8',
-	padding: 100,
-	height: "100%"
-  }
-  
-  const headerFont = {
-	fontFamily: "Arial",
-	fontSize: 60,
-	color: 'yellow'
-  };
-
-export default function JoinUs() {
+export default function Streaming() {
     return (
-        <Grommet theme={myTheme} >
+        <Grommet className="myTheme" >
+
             <Header background={{color: 'red' }} direction="row" pad="small" justify="center">
-                <h1 style={headerFont}>
-                HOLOLIVE RESORT
-                </h1>
+                <Heading level="1" className="headerFont">
+                    HOLOLIVE RESORT
+                </Heading>
             </Header>
-            <div style={backgroundColour}>
+
+            <div className="backgroundColour">
                 <Heading>
                     Streaming
                 </Heading>
                 <br/>
 
-                <p>
+                <Text>
                     Streaming Intro - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
+                </Text>
                 <br/>
                 <br/>
 
-                <img alt="Streamer 1 Pfp"/> 
-                <img alt="Streamer 2 Pfp"/>
-                <img alt="Streamer 3 Pfp"/>
+                <Box direction="row" justify="center">
+                    <Box width="large" pad="medium">
+                        <Image
+                            src="/Number 1.png"
+                            alt="Streamer 1"
+                            width={200}
+                            height={200}
+                        />
+                    </Box>
+                    <Box pad="medium">
+                        <Text><strong>Streamer 1 -</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</Text>
+                    </Box>
+                </Box>
+
+                <Box direction="row" justify="center">
+                    <Box width="large" pad="medium">
+                        <Image
+                            src="/Number 2.png"
+                            alt="Streamer 2"
+                            width={200}
+                            height={200}
+                        />
+                    </Box>
+                    <Box pad="medium">
+                        <Text><strong>Streamer 2 -</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</Text>
+                    </Box>
+                </Box>
+
+                <Box direction="row" justify="center">
+                    <Box width="large" pad="medium">
+                        <Image
+                            src="/Number 3.png"
+                            alt="Streamer 3"
+                            width={200}
+                            height={200}
+                        />
+                    </Box>
+                    <Box pad="medium">
+                        <Text><strong>Streamer 3 -</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</Text>
+                    </Box>
+                </Box>
                 <br/>
                 <br/>
 
-                <p><strong>Streamer 1 -</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <p><strong>Streamer 2 -</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <p><strong>Streamer 3 -</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-
-                <br/>
-                <br/>
-
-                <p>
+                <Text>
                     Streamer Description - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
+                </Text>
                 <br/>
                 <br/>
 
                 <main>
                     {' '}
                     <Link href="/">
-                        <a>Home</a>
+                        <a><strong>Home Page</strong></a>
                     </Link>
                     
                 </main>

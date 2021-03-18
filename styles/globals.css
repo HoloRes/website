@@ -1,3 +1,16 @@
+/*
+  This file will contain all styles that should be applied to all pages. To apply the styles to tags, ensure to use the className attribute with the name of the CSS class defined here.
+  As we are using Grommet, we will not be able to use normal JSX/HTML tags to apply styles globally. Instead, we will need to apply the styles by CSS classes.
+  To create a new style, add a period with the class name in camelCase as shown below:
+
+  .styleName {
+    key: value;
+  }
+
+  Applying style to tag:
+    <tag className="styleName"></tag>
+*/
+
 html,
 body {
   padding: 0;
@@ -9,6 +22,28 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.blackFont {
+  color: black;
+}
+
+.myTheme {
+  color: turquoise;	
+ }
+ 
+.backgroundColour {
+  background-color: #30D5C8;
+  padding: 20px 100px 100px;
+  height: 100%;
+  z-index: 1;
+  color:black;
+}
+ 
+.headerFont {
+  font-family: Arial;
+  font-size: 60px;
+  color: yellow;
 }
 
 * {

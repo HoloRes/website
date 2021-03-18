@@ -1,36 +1,16 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import { Grommet, Header, Box, Button, Footer, Heading} from 'grommet';
+import { Grommet, Header, Box, Button, Footer, Heading, Text} from 'grommet';
 
-const myTheme = {
-	global: {
-		colors: {
-			turquoise: '#30D5C8'
-		},
-	},
-  }
-  
-  const backgroundColour = {
-	backgroundColor: '#30D5C8',
-	padding: 100,
-	height: "100%"
-  }
-  
-  const headerFont = {
-	fontFamily: "Arial",
-	fontSize: 60,
-	color: 'yellow'
-  };
-
-export default function JoinUs() {
+export default function Translations() {
     return (
-        <Grommet theme={myTheme} >
+        <Grommet className="myTheme" >
             <Header background={{color: 'red' }} direction="row" pad="small" justify="center">
-                <h1 style={headerFont}>
+                <h1 className="headerFont">
                 HOLOLIVE RESORT
                 </h1>
             </Header>
-            <div style={backgroundColour}>
+            <div className="backgroundColour">
 
                 <Heading>
                     Translations
@@ -41,13 +21,13 @@ export default function JoinUs() {
                 <br/>
                 <br/>
 
-                <p>
+                <Text>
                     TL Team Description - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
+                </Text>
                 <br/>
                 <br/>
 
@@ -63,7 +43,7 @@ export default function JoinUs() {
                 <main>
                     {' '}
                     <Link href="/">
-                        <a>Home</a>
+                        <a><strong>Home Page</strong></a>
                     </Link>  
                 </main>
 

@@ -1,49 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Head from 'next/head'
 import { Grommet, Header, Box, Button, Footer, Heading, Text} from 'grommet';
-import { Medium } from 'grommet-icons';
-//import logo from './images/HLLResistance_Logo.png';
 
-const myTheme = {
-	global: {
-		colors: {
-			turquoise: '#30D5C8'
-		},
-	},
-  }
-  
-  const backgroundColour = {
-	backgroundColor: '#30D5C8',
-	padding: 100,
-	height: "100%"
-  }
-  
-  const headerFont = {
-	fontFamily: "Arial",
-	fontSize: 60,
-	color: 'yellow'
-  };
-
-  /*
-  var creativeIntro = {
-      display: 'inline-block',
-  };
-  */
-
-export default function JoinUs() {
+export default function Creatives() {
     return (
-        <Grommet theme={myTheme} >
+        <Grommet className="myTheme">
+
             <Header background={{color: 'red' }} direction="row" pad="small" justify="center">
-                <Heading level="1" style={headerFont}>
+                <Heading level="1" className="headerFont">
                 HOLOLIVE RESORT
                 </Heading>
             </Header>
-            <div style={backgroundColour}>
-                <Heading>
-                    Art and Creatives
-                </Heading>
+
+            <div className="backgroundColour">
+                <Box direction="row" justify="center" >
+                    <Heading>
+                        Art and Creatives
+                    </Heading>
+                </Box>
                 <br/>
 
                 <Box direction="row">
@@ -68,9 +43,13 @@ export default function JoinUs() {
                 <br/>
                 <br/>
 
-                <h4>
-                    Art Description
-                </h4>
+                <Box direction="row" justify="center">
+                    <Heading level="4">
+                        Art Description
+                    </Heading>
+                </Box>
+                
+
                 <Text>
                     Art Description - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -193,7 +172,7 @@ export default function JoinUs() {
                 <main>
                     {' '}
                     <Link href="/gallery">
-                        <a>Go to gallery</a>
+                        <a><strong>Go to Gallery</strong></a>
                     </Link>
                 </main>
                 <br/>
@@ -202,7 +181,7 @@ export default function JoinUs() {
                 <main>
                     {' '}
                     <Link href="/">
-                        <a>Home</a>
+                        <a><strong>Home Page</strong></a>
                     </Link>
                     
                 </main>

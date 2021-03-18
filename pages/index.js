@@ -1,50 +1,23 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Grommet, Header, Box, Button, Footer, Heading } from 'grommet';
-
-const myTheme = {
-	global: {
-		colors: {
-			turquoise: '#30D5C8'
-		},
-	},
-  }
-  
-  const backgroundColour = {
-	backgroundColor: '#30D5C8',
-	padding: 100,
-	height: "100%"
-  }
-  
-  const headerFont = {
-	fontFamily: "Arial",
-	fontSize: 60,
-	color: 'yellow'
-  };
-
-/*
-<Button primary label="Home" justify="center" direction="row" color="#00bfff" href="./Home" onClick={() => {}}/>
-<Button primary label="FirstPage" justify="center" direction="row" color="#50c878" href="./FirstPage" onClick={() => {}}/>
-<Button primary label="SecondPage" justify="center" direction="row" color="white" href="./SecondPage" onClick={() => {}}/>
-*/
 
 export default function Home() {
 	return (
-		<Grommet theme={myTheme} >
+		<Grommet className="myTheme" >
 
 			<Header background={{color: 'red' }} direction="row" pad="small" justify="center">
-				<h1 style={headerFont}>
-				HOLOLIVE RESORT
-				</h1>
+				<Heading level="1" className="headerFont">
+					HOLOLIVE RESORT
+				</Heading>
 			</Header>
 
-			<div style={backgroundColour}>
-
-				<Heading>
-                    Home Page
-                </Heading>
+			<div className="backgroundColour">
+				<Box direction="row" justify="center" >
+					<Heading>
+						Home Page
+					</Heading>
+				</Box>
+				
 				<br/>
 			
 				<main>
@@ -80,7 +53,7 @@ export default function Home() {
 
 					{' '}
 					<Link href="/join_us">
-						<a>Join Us!</a>
+						<a><strong>Join Us!</strong></a>
 					</Link>
 					<br/>
 				</main>

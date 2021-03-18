@@ -2,56 +2,41 @@ import Link from 'next/link'
 import Head from 'next/head'
 import { Grommet, Header, Box, Button, Footer, Heading} from 'grommet';
 
-const myTheme = {
-	global: {
-		colors: {
-			turquoise: '#30D5C8'
-		},
-	},
-  }
-  
-  const backgroundColour = {
-	backgroundColor: '#30D5C8',
-	padding: 100,
-	height: "100%"
-  }
-  
-  const headerFont = {
-	fontFamily: "Arial",
-	fontSize: 60,
-	color: 'yellow'
-  };
-
 export default function JoinUs() {
     return (
-        <Grommet theme={myTheme} >
+        <Grommet className="myTheme" >
             <Header background={{color: 'red' }} direction="row" pad="small" justify="center">
-                <h1 style={headerFont}>
-                HOLOLIVE RESORT
-                </h1>
+                <Heading level="1" className="headerFont">
+                    HOLOLIVE RESORT
+                </Heading>
             </Header>
             
-            <div style={backgroundColour}>
-                <Heading>
-                    Join Us!
-                </Heading>
+            <div className="backgroundColour">
+                <Box direction="row" justify="center" >
+                    <Heading>
+                        Join Us!
+                    </Heading>
+                </Box>
                 <br/>
 
-                <h1>
-                    THE RESORT IS OPEN FOR BUSINESS!
-                </h1>
+                <Box direction="row" justify="center" >
+                    <Heading level="1">
+                        THE RESORT IS OPEN FOR BUSINESS!
+                    </Heading>
+                </Box>
                 <br/>
 
-                <Button label="Discord Link Button" color="blue"></Button>
+                <Box direction="row" justify="center" >
+                    <Button label="Discord Link Button" color="blue"></Button>
+                </Box>
+                
                 <br/>
                 <br/>
-
-
 
                 <main>
                     {' '}
                     <Link href="/">
-                        <a>Home</a>
+                        <a><strong>Home Page</strong></a>
                     </Link>
                 </main>
 
