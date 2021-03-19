@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import React from 'react'
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'React-Player'
 import { Grommet, Header, Box, Button, Footer, Heading, Text} from 'grommet';
 
 export default function Translations() {
