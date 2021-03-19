@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import React from 'react'
+import ReactPlayer from 'react-player'
 import { Grommet, Header, Box, Button, Footer, Heading, Text} from 'grommet';
 
 export default function Translations() {
@@ -7,17 +9,21 @@ export default function Translations() {
         <Grommet className="myTheme" >
             <Header background={{color: 'red' }} direction="row" pad="small" justify="center">
                 <h1 className="headerFont">
-                HOLOLIVE RESORT
+                    HOLOLIVE RESORT
                 </h1>
             </Header>
             <div className="backgroundColour">
 
-                <Heading>
-                    Translations
-                </Heading>
+                <Box direction="row" justify="center" >
+                    <Heading>
+                        Translations
+                    </Heading>
+                </Box>
                 <br/>
 
-                <video>Youtube channel video</video>
+                <Box direction="row" justify="center" >
+                    <ReactPlayer url='https://www.youtube.com/watch?v=etWRya4VfjU&' />
+                </Box>
                 <br/>
                 <br/>
 
