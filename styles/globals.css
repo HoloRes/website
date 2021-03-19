@@ -39,7 +39,21 @@ a {
   z-index: 1;
   color:black;
 }
- 
+
+.outerBackground {
+  background-color: #87ceff;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.innerBackground {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
 .headerFont {
   font-family: Arial;
   font-size: 60px;
