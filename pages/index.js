@@ -45,6 +45,22 @@ export default function Home() {
                     <Link href="/language-exchange">
                         <a>Language Exchange</a>
                     </Link>
+					<br/>
+
+					<Heading level="3">
+						Admin Pages
+					</Heading>
+
+					{' '}
+                    <Link href="/dash/admin">
+                        <a>Admin Page</a>
+                    </Link>
+					<br/>
+					{' '}
+                    <Link href="/dash/artist">
+                        <a>Artist Page</a>
+                    </Link>
+					<br/>
 
 					<br/>
 					<br/>

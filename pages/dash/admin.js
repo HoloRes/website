@@ -1,7 +1,24 @@
 // * This is a panel accessible for staff, to moderate the uploaded content
 
-import { Grommet, Header, Box, Button, Footer, Heading, Text} from 'grommet';
+import { 
+	Grommet, 
+	Header, 
+	Box, 
+	Button, 
+	Footer, 
+	Heading, 
+	Text, 
+	Tabs, 
+	Tab, 
+	Table,
+	TableHeader,
+	TableRow,
+	TableCell,
+	TableBody,
+	Menu
+} from 'grommet';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function AdminPage() {
 	return (
@@ -11,81 +28,299 @@ export default function AdminPage() {
 					Admin Page
 				</Heading>
 			</Box>
+			
+			{/* Admin Tabs */}
+			<Tabs>
+				{/* Artist Table */}
+				<Tab title="Artist List">
+					<Box width="xlarge" alignContent="center" margin="xlarge">
+						<Table>
+							<TableHeader>
+								<TableRow>
+									<TableCell scope="col" border="bottom">
+										Artist Name
+									</TableCell>
+									<TableCell scope="col" border="bottom">
+										Discord ID
+									</TableCell>
+									<TableCell scope="col" border="bottom">
+										Email Address
+									</TableCell>
+								</TableRow>
+							</TableHeader>
+							<TableBody>
+								<TableRow>
+									<TableCell scope="row">
+										<strong>Artist 1</strong>
+									</TableCell>
+									<TableCell>
+										Artist1#0001
+									</TableCell>
+									<TableCell>
+										artist1@gmail.com
+									</TableCell>
+								</TableRow>
+								<TableRow>
+									<TableCell scope="row">
+										<strong>Artist 2</strong>
+									</TableCell>
+									<TableCell>
+										Artist2#0002
+									</TableCell>
+									<TableCell>
+										artist2@gmail.com
+									</TableCell>
+								</TableRow>
+								<TableRow>
+									<TableCell scope="row">
+										<strong>Artist 3</strong>
+									</TableCell>
+									<TableCell>
+										Artist3#0003
+									</TableCell>
+									<TableCell>
+										artist3@gmail.com
+									</TableCell>
+								</TableRow>
+							</TableBody>
+						</Table>
+					</Box>
+				</Tab>
+
+				{/* User Table */}
+				<Tab title="User List">
+					<Box width="xlarge" alignContent="center" margin="xlarge">
+						<Table>
+							<TableHeader>
+								<TableRow>
+									<TableCell scope="col" border="bottom">
+										Artist Name
+									</TableCell>
+									<TableCell scope="col" border="bottom">
+										Discord ID
+									</TableCell>
+									<TableCell scope="col" border="bottom">
+										Email Address
+									</TableCell>
+								</TableRow>
+							</TableHeader>
+							<TableBody>
+								<TableRow>
+									<TableCell scope="row">
+										<strong>User 1</strong>
+									</TableCell>
+									<TableCell>
+										User1#0001
+									</TableCell>
+									<TableCell>
+										user1@gmail.com
+									</TableCell>
+								</TableRow>
+								<TableRow>
+									<TableCell scope="row">
+										<strong>User 2</strong>
+									</TableCell>
+									<TableCell>
+										User2#0002
+									</TableCell>
+									<TableCell>
+										user2@gmail.com
+									</TableCell>
+								</TableRow>
+								<TableRow>
+									<TableCell scope="row">
+										<strong>User 3</strong>
+									</TableCell>
+									<TableCell>
+										User3#0003
+									</TableCell>
+									<TableCell>
+										user3@gmail.com
+									</TableCell>
+								</TableRow>
+							</TableBody>
+						</Table>
+					</Box>
+				</Tab>
 				
-			<Box justify="right" gap="small" margin="large">
-				<Button label="Upload" alignSelf="end"></Button>
-				<Button label="Delete" alignSelf="end"></Button>
-            </Box>
+				{/* Image List */}
+				<Tab title="Image List">
+					<Box width="xlarge" alignContent="center" margin="xlarge">
+						<Box justify="right" gap="small" margin="large">
+							{/* Remove this if not required */}
+							<Heading>
+								Image List
+							</Heading>
+							<Menu
+								label="Actions"
+								items={[
+									{ label: 'Upload Image', onClick: () => {} },
+									{ label: 'Delete Image', onClick: () => {} },
+								]}
+							/>
+						</Box>
 
+						<Box direction="row" justify="center" gap="small">
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+						</Box>
+						<br/>
+						<br/>
 
+						<Box direction="row" justify="center" gap="small">
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+						</Box>
+						<br/>
+						<br/>
 
+						<Box direction="row" justify="center" gap="small">
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+						</Box>
+						<br/>
+						<br/>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<Box justify="center" align="center">
-				<Text alignSelf="center" margin="large">
-					Placeholder - "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-				</Text>
-
-				<Text alignSelf="center" margin="large">
-					Placeholder - "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-				</Text>
-			</Box>
+						<Box direction="row" justify="center" gap="small">
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+							<Box height="300px" width="240px" border={{
+								"color": "border",
+								"size": "medium",
+								"style": "solid",
+								"side": "all"
+							}} background="#000080">
+							</Box>
+						</Box>
+					</Box>
+				</Tab>
+			</Tabs>
+				
 			<Box margin="large">
 				<main>
 					{' '}
