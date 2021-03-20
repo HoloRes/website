@@ -1,7 +1,5 @@
-import { Grommet, Header, Box, Button, Footer, Heading, Text} from 'grommet';
+import { Text } from 'grommet';
 
 export default function AdminPage() {
-	return (
-		<Text>Login page</Text>
-	)
+  return <Text>Login page</Text>;
 }
