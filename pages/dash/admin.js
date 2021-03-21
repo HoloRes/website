@@ -5,6 +5,7 @@ import {
   Box,
   Footer,
   Heading,
+  Header,
   Tabs,
   Tab,
   Table,
@@ -13,12 +14,18 @@ import {
   TableCell,
   TableBody,
   Menu,
+  Clock
 } from 'grommet';
 import Link from 'next/link';
 
 export default function AdminPage() {
   return (
     <Grommet className="outerBackground">
+      <Header background="black" >
+        <Heading level="2" margin="small">Admin Portal</Heading>
+        <Clock type="digital" margin="small"/>
+      </Header>
+
       <Box justify="center" align="center">
         <Heading>Admin Page</Heading>
       </Box>
@@ -27,7 +34,7 @@ export default function AdminPage() {
       <Tabs>
         {/* Artist Table */}
         <Tab title="Artist List">
-          <Box width="xlarge" alignContent="center" margin="xlarge">
+          <Box width="xlarge" alignContent="center" margin={{"horizontal":"xlarge", "vertical":"medium"}}>
             <Table>
               <TableHeader>
                 <TableRow>
@@ -44,11 +51,13 @@ export default function AdminPage() {
               </TableHeader>
               <TableBody>
                 <TableRow>
-                  <TableCell scope="row">
+                  <Box onClick={}>
+                    <TableCell scope="row">
                     <strong>Artist 1</strong>
-                  </TableCell>
-                  <TableCell>Artist1#0001</TableCell>
-                  <TableCell>artist1@gmail.com</TableCell>
+                    </TableCell>
+                    <TableCell>Artist1#0001</TableCell>
+                    <TableCell>artist1@gmail.com</TableCell>
+                  </Box>
                 </TableRow>
                 <TableRow>
                   <TableCell scope="row">
@@ -71,7 +80,7 @@ export default function AdminPage() {
 
         {/* User Table */}
         <Tab title="User List">
-          <Box width="xlarge" alignContent="center" margin="xlarge">
+          <Box width="xlarge" alignContent="center" margin={{"horizontal":"xlarge", "vertical":"medium"}}>
             <Table>
               <TableHeader>
                 <TableRow>
@@ -115,8 +124,8 @@ export default function AdminPage() {
 
         {/* Image List */}
         <Tab title="Image List">
-          <Box width="xlarge" alignContent="center" margin="xlarge">
-            <Box justify="right" gap="small" margin="large">
+          <Box width="xlarge" alignContent="center" margin={{"horizontal":"xlarge", "vertical":"medium"}}>
+            <Box justify="right" gap="small" margin={{"horizontal":"xlarge", "vertical":"medium"}}>
               {/* Remove this if not required */}
               <Heading>Image List</Heading>
               <Menu

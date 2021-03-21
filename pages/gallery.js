@@ -26,7 +26,12 @@ export default function Gallery() {
         </Box>
 
         <Box direction="row" justify="center" gap="small">
-          <Box
+
+          
+
+          {
+          /*
+            <Box
             height="300px"
             width="600px"
             border={{
@@ -47,7 +52,9 @@ export default function Gallery() {
               side: 'all',
             }}
             background="#000080"
-          />
+          /> */
+          }
+          
         </Box>
         <br />
         <br />

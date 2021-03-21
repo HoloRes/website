@@ -1,12 +1,17 @@
 // * This is a panel accessible to artist, to upload content to our S3 bucket
 
-import { Grommet, Box, Footer, Heading, Text, Menu } from 'grommet';
+import { Grommet, Box, Footer, Heading, Text, Menu, Header, Clock } from 'grommet';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function ArtistPage() {
   return (
     <Grommet className="outerBackground">
+      <Header background="black" >
+        <Heading level="2" margin="small">Admin Portal</Heading>
+        <Clock type="digital" margin="small"/>
+      </Header>
+
       <Box justify="center" align="center">
         <Heading>Artist Page</Heading>
       </Box>
