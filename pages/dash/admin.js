@@ -17,8 +17,19 @@ import {
   Clock
 } from 'grommet';
 import Link from 'next/link';
+import { useState } from 'react';
+
+
+
+function handleClick(e) {
+  e.preventDefault();    
+  console.log('The link was clicked.');  
+}
 
 export default function AdminPage() {
+  const [click, setClick] = useState('');
+
+
   return (
     <Grommet className="outerBackground">
       <Header background="black" >
@@ -51,7 +62,7 @@ export default function AdminPage() {
               </TableHeader>
               <TableBody>
                 <TableRow>
-                  <Box onClick={}>
+                  <Box direction="row" justify="center" width="xlarge">
                     <TableCell scope="row">
                     <strong>Artist 1</strong>
                     </TableCell>
