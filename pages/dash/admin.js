@@ -14,7 +14,8 @@ import {
   TableCell,
   TableBody,
   Menu,
-  Clock
+  Clock,
+  Anchor
 } from 'grommet';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -41,6 +42,26 @@ export default function AdminPage() {
         <Heading>Admin Page</Heading>
       </Box>
 
+      {/* JSX to consider later 
+
+      <TableCell scope="col" border="bottom">
+                    Discord ID
+                  </TableCell>
+                  <TableCell scope="col" border="bottom">
+                    Email Address
+                  </TableCell>
+      
+              <TableCell>Artist1#0001</TableCell>
+      <TableCell>artist1@gmail.com</TableCell>
+
+              <TableCell>Artist2#0002</TableCell>
+      <TableCell>artist2@gmail.com</TableCell>
+      
+              <TableCell>Artist3#0003</TableCell>
+        <TableCell>artist3@gmail.com</TableCell>
+
+      */}
+
       {/* Admin Tabs */}
       <Tabs>
         {/* Artist Table */}
@@ -52,37 +73,35 @@ export default function AdminPage() {
                   <TableCell scope="col" border="bottom">
                     Artist Name
                   </TableCell>
-                  <TableCell scope="col" border="bottom">
-                    Discord ID
-                  </TableCell>
-                  <TableCell scope="col" border="bottom">
-                    Email Address
-                  </TableCell>
                 </TableRow>
               </TableHeader>
               <TableBody>
-                <TableRow>
-                  <Box direction="row" justify="center" width="xlarge">
-                    <TableCell scope="row">
-                    <strong>Artist 1</strong>
-                    </TableCell>
-                    <TableCell>Artist1#0001</TableCell>
-                    <TableCell>artist1@gmail.com</TableCell>
-                  </Box>
+                <TableRow width="xlarge" alignContent="center" margin={{"horizontal":"xlarge", "vertical":"medium"}}>
+                  <Link href="/dash/artist">
+                    <Anchor>
+                      <TableCell scope="row">
+                        <strong>Artist 1</strong>
+                      </TableCell>
+                    </Anchor>     
+                  </Link>
                 </TableRow>
                 <TableRow>
-                  <TableCell scope="row">
-                    <strong>Artist 2</strong>
-                  </TableCell>
-                  <TableCell>Artist2#0002</TableCell>
-                  <TableCell>artist2@gmail.com</TableCell>
+                  <Link href="/dash/artist">
+                    <Anchor>
+                      <TableCell scope="row">
+                        <strong>Artist 2</strong>
+                      </TableCell>
+                    </Anchor>
+                  </Link>
                 </TableRow>
                 <TableRow>
-                  <TableCell scope="row">
-                    <strong>Artist 3</strong>
-                  </TableCell>
-                  <TableCell>Artist3#0003</TableCell>
-                  <TableCell>artist3@gmail.com</TableCell>
+                  <Link href="/dash/artist">
+                    <Anchor>
+                      <TableCell scope="row">
+                        <strong>Artist 3</strong>
+                      </TableCell>
+                    </Anchor>
+                  </Link>
                 </TableRow>
               </TableBody>
             </Table>

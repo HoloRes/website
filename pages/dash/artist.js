@@ -1,6 +1,6 @@
 // * This is a panel accessible to artist, to upload content to our S3 bucket
 
-import { Grommet, Box, Footer, Heading, Text, Menu, Header, Clock } from 'grommet';
+import { Grommet, Box, Footer, Heading, Text, Menu, Header, Clock, Anchor } from 'grommet';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -113,10 +113,10 @@ export default function ArtistPage() {
       <Box margin="large">
         <main>
           {' '}
-          <Link href="/">
-            <a>
-              <strong>Home Page</strong>
-            </a>
+          <Link href="/dash/admin">
+            <Anchor>
+              <strong>Admin Page</strong>
+            </Anchor>
           </Link>
         </main>
       </Box>
