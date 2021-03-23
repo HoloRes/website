@@ -19,6 +19,7 @@ import {
 } from 'grommet';
 import Link from 'next/link';
 import { useState } from 'react';
+import ArtistPage from './artist';
 
 
 
@@ -77,7 +78,7 @@ export default function AdminPage() {
               </TableHeader>
               <TableBody>
                 <TableRow width="xlarge" alignContent="center" margin={{"horizontal":"xlarge", "vertical":"medium"}}>
-                  <Link href="/dash/artist">
+                  <Link href="/dash/artist" onClick={() => ArtistPage.setArtistIndex(artistIndex + 1)}>
                     <Anchor>
                       <TableCell scope="row">
                         <strong>Artist 1</strong>

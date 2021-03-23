@@ -3,8 +3,18 @@
 import { Grommet, Box, Footer, Heading, Text, Menu, Header, Clock, Anchor } from 'grommet';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
+
+let artistName = ["Artist 0", "Artist 1", "Artist 2"];
+
+let artistEmail = ["Artist 0", "artist1@gmail.com", "artist2@gmail.com"];
+
+let artistTwitter = ["@Artist0", "@Artist1","@Artist2"];
 
 export default function ArtistPage() {
+
+  const [ artistIndex, setArtistIndex ] = useState(0);
+
   return (
     <Grommet className="outerBackground">
       <Header background="black" >
@@ -25,15 +35,15 @@ export default function ArtistPage() {
         />
       </Box>
 
-      <Box width="xlarge" alignContent="left" margin="xlarge">
+      <Box width="xlarge" alignContent="left" margin={{"horizontal":"xlarge", "vertical":"xsmall"}}>
         <Box>
           <Heading>
-            <strong>Artist Name</strong>
+            <strong>{artistName[artistIndex]}</strong>
           </Heading>
           <br />
-          <Text>Placeholder Info 1</Text>
+          <Text>Email: {artistEmail[artistIndex]}</Text>
           <br />
-          <Text>Placeholder Info 2</Text>
+          <Text>Twitter: {artistTwitter[artistIndex]}</Text>
           <br />
 
           {/* <FileInput name="file" /> */}
