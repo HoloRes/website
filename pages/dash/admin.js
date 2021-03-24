@@ -18,17 +18,12 @@ import {
   Anchor
 } from 'grommet';
 import Link from 'next/link';
-import { useState } from 'react';
-import ArtistPage from './artist';
+import { useState, useEffect } from 'react';
 
-
-
-function handleClick(e) {
-  e.preventDefault();    
-  console.log('The link was clicked.');  
-}
 
 export default function AdminPage() {
+  const { useState, useEffect } = require('react');
+
   const [click, setClick] = useState('');
 
 
@@ -78,31 +73,21 @@ export default function AdminPage() {
               </TableHeader>
               <TableBody>
                 <TableRow width="xlarge" alignContent="center" margin={{"horizontal":"xlarge", "vertical":"medium"}}>
-                  <Link href="/dash/artist" onClick={() => ArtistPage.setArtistIndex(artistIndex + 1)}>
-                    <Anchor>
-                      <TableCell scope="row">
-                        <strong>Artist 1</strong>
-                      </TableCell>
-                    </Anchor>     
-                  </Link>
+                  <Box onClick={}>
+                    <TableCell scope="row">
+                      <strong>Artist 1</strong>
+                    </TableCell>
+                  </Box> 
                 </TableRow>
                 <TableRow>
-                  <Link href="/dash/artist">
-                    <Anchor>
-                      <TableCell scope="row">
-                        <strong>Artist 2</strong>
-                      </TableCell>
-                    </Anchor>
-                  </Link>
+                  <TableCell scope="row">
+                    <strong>Artist 2</strong>
+                  </TableCell>
                 </TableRow>
                 <TableRow>
-                  <Link href="/dash/artist">
-                    <Anchor>
-                      <TableCell scope="row">
-                        <strong>Artist 3</strong>
-                      </TableCell>
-                    </Anchor>
-                  </Link>
+                  <TableCell scope="row">
+                    <strong>Artist 3</strong>
+                  </TableCell>
                 </TableRow>
               </TableBody>
             </Table>
