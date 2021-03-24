@@ -19,13 +19,32 @@ import {
 } from 'grommet';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import AdminUserInfo from '../../components/adminUserInfo';
 
+function ArtistID({ artistId }) {
+  const [id, setId] = useState(0);
+  
+  const [info, setInfo] = useState("");
+
+  useEffect(() => {
+    setId(artistId)
+  });
+
+  return "";
+}
+
+function displayUserInfo() {
+  return (
+    <AdminUserInfo></AdminUserInfo>
+  );
+}
 
 export default function AdminPage() {
   const { useState, useEffect } = require('react');
 
   const [click, setClick] = useState('');
 
+  const [show, setShow] = useState(false);
 
   return (
     <Grommet className="outerBackground">
@@ -73,7 +92,8 @@ export default function AdminPage() {
               </TableHeader>
               <TableBody>
                 <TableRow width="xlarge" alignContent="center" margin={{"horizontal":"xlarge", "vertical":"medium"}}>
-                  <Box onClick={}>
+                  <Box onClick={() => setShow(true)} >
+                    {show && (<AdminUserInfo onEsc={() => setShow(false)} onClickOutside={() => setShow(false)}></AdminUserInfo>)}
                     <TableCell scope="row">
                       <strong>Artist 1</strong>
                     </TableCell>
