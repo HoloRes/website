@@ -40,9 +40,8 @@ function displayUserInfo() {
 }
 
 export default function AdminPage() {
-  const { useState, useEffect } = require('react');
 
-  const [click, setClick] = useState('');
+  const { useState, useEffect } = require('react');
 
   const [show, setShow] = useState(false);
 
@@ -93,7 +92,7 @@ export default function AdminPage() {
               <TableBody>
                 <TableRow width="xlarge" alignContent="center" margin={{"horizontal":"xlarge", "vertical":"medium"}}>
                   <Box onClick={() => setShow(true)} >
-                    {show && (<AdminUserInfo onEsc={() => setShow(false)} onClickOutside={() => setShow(false)}></AdminUserInfo>)}
+                    {show && <AdminUserInfo setShow={setShow}/>}
                     <TableCell scope="row">
                       <strong>Artist 1</strong>
                     </TableCell>
