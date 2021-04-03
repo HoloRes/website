@@ -11,7 +11,12 @@
         "react": "17.0.2",
         "react-dom": "17.0.2",
         "react-player": "^2.9.0",
+<<<<<<< Updated upstream
         "styled-components": "^5.2.2"
+=======
+        "react-scroll": "^1.8.2",
+        "styled-components": "^5.2.1"
+>>>>>>> Stashed changes
     },
     "devDependencies": {
         "@ijsto/eslint-config": "^3.0.1",
