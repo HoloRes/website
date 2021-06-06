@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "description": "The Hololive Resort Discord website",
     "dependencies": {
-        "next": "10.0.6",
+        "next": "10.2.3",
         "react": "17.0.1",
         "react-dom": "17.0.1"
     },
