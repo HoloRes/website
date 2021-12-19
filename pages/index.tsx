@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Home: NextPage = function () {
 	return (
@@ -8,14 +9,16 @@ const Home: NextPage = function () {
 			<Head>
 				<title>Hololive Resort</title>
 			</Head>
+
 			<Navbar />
-			<div className="flex h-[22.5rem] text-white">
-				<div className="w-[55%] -ml-[10%] bg-hololive-blue skew-x-[-30deg]">
-					<div className="-skew-x-[-30deg] ml-24 w-[56rem] h-[22.5rem] py-8 overflow-x-hidden break-words text-center align-middle flex flex-col justify-center items-center gap-8">
+
+			<main className="flex h-[91.5vh] text-white bg-[#67cae1]">
+				<div className="w-[65%] -ml-[15%] bg-hololive-blue skew-x-[-20deg]">
+					<div className="-skew-x-[-20deg] ml-64 w-[56rem] h-full -mt-20 overflow-x-hidden break-words text-center align-middle flex flex-col justify-center items-center gap-8">
 						<div>
 							<h1 className="text-4xl">Hololive Resort</h1>
 							<h2 className="text-lg w-[32rem]">
-								A fun Hololive community!
+								A fun Hololive Discord community!
 								<br />
 								We have concerts, arts, festivals, and more!
 							</h2>
@@ -30,14 +33,14 @@ const Home: NextPage = function () {
 						</a>
 					</div>
 				</div>
+
 				<img
-					className="w-[65%] object-cover object-right-top -ml-32"
-					src="/img/suisei-bg.png"
+					className="w-[65%] object-cover object-[50px_center] -ml-32"
+					src="/img/banner.png"
 				/>
-			</div>
-			<div className="p-4 content-center text-center">
-				Some extended server information
-			</div>
+			</main>
+
+			<Footer />
 		</>
 	);
 };

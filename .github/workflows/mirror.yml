@@ -1,0 +1,20 @@
+name: Mirroring
+
+on: [push, delete]
+
+jobs:
+  mirror:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - uses: pixta-dev/repository-mirroring-action@v1
+      with:
+        target_repo_url:
+          git@github.com:hlrdiscord/website.git
+        ssh_private_key:
+          ${{ secrets.GH_HOLORES_SECRETKEY }}
+
