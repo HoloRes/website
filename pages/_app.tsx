@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 const MyApp = function ({ Component, pageProps }: AppProps) {
 	return (
-		<div className="min-h-screen">
+		<div className="min-h-screen max-h-[110vh]">
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</Head>

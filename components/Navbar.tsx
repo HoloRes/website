@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Navbar = function () {
 	return (
-		<div className="bg-hololive-blue w-full h-20 p-2 flex items-center border-b border-white">
+		<div className="bg-hololive-blue w-full h-20 p-2 flex items-center border-b border-white justify-center lg:justify-start">
 			<Link href="/" passHref>
 				<Image
 					height={85}
