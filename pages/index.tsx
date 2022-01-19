@@ -39,7 +39,7 @@ const Home: NextPage = function () {
 				<img
 					className="w-[65%] object-cover object-[50px_center] -ml-32 hidden lg:block"
 					src="/img/banner.png"
-					alt="Background image"
+					alt="Background"
 				/>
 			</main>
 
